@@ -1,12 +1,9 @@
 PARTS = \
-	overview.tex education.tex research.tex professional.tex events.tex \
-	others.tex
-AUX   = \
-	overview.aux education.aux research.aux professional.aux events.aux \
-	others.aux
+	education.tex events.tex others.tex overview.tex professional.tex \
+	research.tex
 .PHONY: clean
 all: cv.pdf
 cv.pdf: cv.tex $(PARTS)
 	pdflatex cv.tex
 clean:
-	rm -f cv.{aux,log,out,pdf} $(AUX)
+	rm -f cv.{log,out,pdf} $(PARTS:.tex=.aux)

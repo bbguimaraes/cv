@@ -2,7 +2,7 @@
 \documentclass[a4paper]{article}
 \linespread{1.2}
 \setlength{\parindent}{0cm}
-\setlength{\columnsep}{2em}
+\setlength{\columnsep}{4em}
 \usepackage[utf8]{inputenc}
 \usepackage{fullpage}
 \usepackage{multicol}
@@ -12,6 +12,9 @@
 
 \titleformat{\section}{\large}{\thesubsection}{0cm}{\textsc}
 \titleformat{\subsection}{\normalsize}{\thesubsection}{0cm}{\textsc}
+\titlespacing{\section}{0pt}{0.5em}{0.5em}[0pt]
+
+\setlength{\columnsep}{2em}
 
 \setlist{label=\textbullet,topsep=0cm,labelsep=0.5em,leftmargin=*,noitemsep}
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -23,9 +26,11 @@
     \input{overview}
     \newpage
     \small
+    \begin{multicols}{2}
     \input{projects}
-    \newpage
-    \input{professional}
     \input{education}
+    \columnbreak
+    \input{professional}
     \input{others}
+    \end{multicols}
 \end{document}

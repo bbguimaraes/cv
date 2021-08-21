@@ -1,9 +1,11 @@
 % based on https://github.com/vaishaks/latex-cv
-\documentclass[a4paper, 10pt]{article}
+\documentclass[a4paper]{article}
 \linespread{1.2}
 \setlength{\parindent}{0cm}
+\setlength{\columnsep}{2em}
 \usepackage[utf8]{inputenc}
-\usepackage[cm]{fullpage}
+\usepackage{fullpage}
+\usepackage{multicol}
 \usepackage{titlesec}
 \titleformat{\section}   {\Huge} {\thesection}   {0cm}{\textsc}
 \titleformat{\subsection}{\Large}{\thesubsection}{0cm}{\textsc}
@@ -18,6 +20,7 @@
 \begin{document}
     \input{overview}
     \newpage
+    \small
     \input{education}
     \newpage
     \input{projects}

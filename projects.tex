@@ -2,66 +2,94 @@
 \section*{Personal projects}
 \label{sec:projects}
 
-\subsection*{\texttt{nngn}}
-
-\url{https://bbguimaraes.com/nngn}
-
-\url{https://gitlab.bbguimaraes.com/bbguimaraes/nngn.git}
-
-2D/3D game/graphics/physics engine.
-
+\href{https://bbguimaraes.com/nngn}{\texttt{nngn}}
+--- 2D\slash 3D graphics\slash physics\slash audio\slash game engine
 \begin{itemize}
-    \item C++ engine
-    \item Lua scripting
-    \item Vulkan/OpenGL graphics backend
-    \item Dynamic lighting/shadows
-    \item OpenCL compute backend
-    \item Native/OpenCL collision detection
-    \item WebAssembly build
+    \item
+        \href
+            {https://bbguimaraes.com/nngn/docs/dir_68267d1309a1af8e8297ef4c3efbcdba.html}
+            {C++20},
+        \href
+            {https://bbguimaraes.com/nngn/docs/dir_eb2a6c909ccee19b40dc174b15a80916.html}
+            {Lua},
+        Rust.
+        Independent TUI / GUI (Qt)
+        \href
+            {https://bbguimaraes.com/nngn/docs/dir_4eeb864c4eec08c7d6b9d3b0352cfdde.html}
+            {tools},
+        \href
+            {https://bbguimaraes.com/nngn/nngn.html?argv=demos/demo1.lua}
+            {WebAssembly build}.
+    \item
+        \href
+            {https://bbguimaraes.com/nngn/docs/dir_560415a5d2bc4999842279f4fc1debef.html}
+            {Graphics}:
+        Vulkan, OpenGL\slash ES, ASCII software rasterizer.  Dynamic
+        lights\slash shadows, post-processing, HDR.
+    \item
+        \href
+            {https://bbguimaraes.com/nngn/docs/dir_e10d8d1736f2f8a793a6d4fd13649885.html}
+            {Compute}:
+        OpenCL compute back end, CPU\slash OpenCL collision detection,
+        particle simulation.
 \end{itemize}
 
-\subsection*{\texttt{machinatrix}}
-
-\url{https://gitlab.bbguimaraes.com/bbguimaraes/machinatrix.git}
-
-Chat robot for the Matrix self-hosted, decentralized communication protocol,
-written in C.
-
-\subsection*{\texttt{bbguimaraes.com}}
-
-Personal website built with an Openshift cluster.
-
+\href{https://bbguimaraes.com/gdb_lua}{\texttt{gdb\_lua}}
+--- GDB commands for embedded Lua
 \begin{itemize}
     \item
-        \url{https://bbguimaraes.com}
-        \begin{itemize}
-            \item static website
-            \item \url{https://gitlab.bbguimaraes.com/bbguimaraes/bbguimaraes.com.git}.
-        \end{itemize}
+        Statically-typed Python using the GDB Python API, support for
+        multiple Lua versions at runtime.
     \item
-        \url{https://nextcloud.bbguimaraes.com}
-        \begin{itemize}
-            \item Nextcloud server
-            \item postgresql, php-fpm, memcached, nginx
-            \item \url{https://gitlab.bbguimaraes.com/bbguimaraes/openshift-nextcloud.git}
-        \end{itemize}
+        Data\slash call stack inspection, debugging information, pretty
+        printers, recursive expansion of tables\slash structures.
+\end{itemize}
+
+\href{https://bbguimaraes.com/machinatrix}{\texttt{machinatrix}}
+--- chat robot for the Matrix decentralized communication protocol
+\begin{itemize}
     \item
-        \url{https://git.bbguimaraes.com}
-        \begin{itemize}
-            \item git server
-            \item nginx, uwsgi, git-http-backend
-            \item \url{https://gitlab.bbguimaraes.com/bbguimaraes/openshift-git.git}
-        \end{itemize}
+        C11, Unix\slash POSIX, networking, SQLite, \texttt{libcurl},
+        \texttt{tidy}, \texttt{cjson}.
     \item
-        \url{https://gitlab.bbguimaraes.com}
-        \begin{itemize}
-            \item Gitlab server
-            \item nginx, puma, redis
-            \item \url{https://gitlab.bbguimaraes.com/bbguimaraes/openshift-git.git}
-        \end{itemize}
+        Layered architecture, privilege separation:
+        \href
+            {https://gitlab.bbguimaraes.com/bbguimaraes/machinatrix/-/blob/master/main.c}
+            {command line},
+        \href
+            {https://gitlab.bbguimaraes.com/bbguimaraes/machinatrix/-/blob/master/matrix.c}
+            {Matrix integration},
+        \href
+            {https://gitlab.bbguimaraes.com/bbguimaraes/machinatrix/-/blob/master/numeraria.c}
+            {database\slash statistics server}.
+\end{itemize}
+
+\href{https://bbguimaraes.com}{\texttt{bbguimaraes.com}}
+--- personal website built with Linux containers
+\begin{itemize}
     \item
-        \url{https://matrix.bbguimaraes.com}
-        \begin{itemize}
-            \item Matrix decentralized communication server
-        \end{itemize}
+        \href{https://bbguimaraes.com}{static web site},
+        \href{https://git.bbguimaraes.com}{git},
+        \href{https://gitlab.bbguimaraes.com}{gitlab},
+        \href{https://matrix.bbguimaraes.com}{matrix},
+        \href{https://nextcloud.bbguimaraes.com}{nextcloud}
+\end{itemize}
+
+\href{https://bbguimaraes.com/codex}{\texttt{codex}}
+--- code experiments, research notes
+\begin{itemize}
+    \item
+        \texttt{cpp.lua}: a C preprocessor which outputs detailed
+        information about macro expansion.
+\end{itemize}
+
+\href{https://bbguimaraes.com/impero}{\texttt{impero}}
+--- graphical command executor (C++20, Qt)
+
+\href
+    {https://gitlab.bbguimaraes.com/bbguimaraes/dotfiles.git}
+    {\texttt{dotfiles}}
+--- dotfile\slash script repository
+\begin{itemize}
+    \item \texttt{ansible}-based PC and server management, various scripts.
 \end{itemize}

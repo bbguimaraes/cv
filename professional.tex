@@ -2,112 +2,55 @@
 \section*{Experience}
 \label{sec:professional}
 
-\subsection*{Universidade de Caxias do Sul}
-
-\begin{description}
-    \item[Titles]:
-        Trainee programmer (2012-2014), Programmer (2014-2015), Senior
-        programmer (2015)
-    \item[Location]: Caxias do Sul, Brazil
-    \item[Attributions]:
-        \begin{itemize}
-            \item
-                Development of computer systems used by the university's
-                teachers, students, and employees ($\sim$30k users).
-            \item
-                Web development with a traditional linux stack, web server
-                configuration and maintenance.
-            \item
-                Configuration and maintenance of auxiliary web application
-                infrastructure, e.g.: memcache (memory caching service), celery
-                (python work queue manager), and buildbot (continuous
-                integration service).
-            \item
-                Configuration of a redmine instance for internal issue
-                tracking.
-            \item
-                Integrated authetication (single sign on) of multiple services
-                (internal python/django applications, redmine, wordpress).
-            \item
-                Utilization of linux containers for the development and
-                deployment of web applications.
-        \end{itemize}
-    \item[Technologies]:
-        \begin{itemize}
-            \item \textbf{Operating systems}: linux (CentOS, RHEL, docker)
-            \item \textbf{Languages}: python, html, css, js, c, ruby, php
-            \item \textbf{Web frameworks}: django, rails, wordpress
-            \item \textbf{Databases}: sqlite, postgresql, oracle
-            \item \textbf{Web servers}:
-                apache, nginx, mod\_wsgi, uwsgi, passenger
-            \item \textbf{Services}:
-                memcache, sentry, celery, buildbot, mongodb, ldap, active
-                directory, SAML
-        \end{itemize}
-\end{description}
-
 \phantomsection
-\subsection*{Red Hat - Openshift - Integration Services}
+\href{https://redhat.com}{Red Hat} (2016-pres.)
 \label{subsec:redhat}
 
-\begin{description}
-    \item[Title]: Associate software engineer (2016)
-    \item[Location]: Brno, Czech Republic (remote team in the USA)
-    \item[Attributions]:
-        \begin{itemize}
-            \item
-                Integration of external applications that provide additional
-                services to the cluster into the core distribution.
-            \item
-                Development and maintenance of deployment configuration and
-                scripts, automated tests.
-            \item
-                Transition the deployment of the components from shell scripts
-                to ansible playbooks.
-        \end{itemize}
-    \item[Platform]: kubernetes, openshift, shell, go, java.
-    \item[Services]:
-        logging (fluentd, elasticsearch, kibana), metrics (heapster, hawkular,
-        cassandra), API (apiman).
-    \item[Public repositories]:
-        \begin{itemize}
-            \item \url{https://github.com/openshift/origin-metrics.git}
-            \item \url{https://github.com/openshift/origin-aggregated-logging.git}
-            \item \url{https://github.com/openshift/openshift-ansible.git}
-        \end{itemize}
-\end{description}
+\begin{itemize}
+    \item
+        Worked on the OpenShift
+        \href{https://prow.ci.openshift.org}{continuous integration system}, a
+        highly parallel, distributed scheduler\slash executor built with
+        OpenShift\slash Kubernetes clusters.
+    \item
+        Supported 800 repositories, 60 organizations, 100s of developers, 200
+        compute nodes, 100k jobs\slash week.
+    \item
+        Designed and implemented the current
+        \href
+            {https://github.com/openshift/ci-tools/blob/master/pkg/steps/multi_stage.go}
+            {test DSL and executor},
+        separating complex test scripts into discrete steps, greatly simplifying
+        them and making execution more robust and intuitive.
+    \item
+        Transitioned a mostly legacy code base into a reliable and thoroughly
+        tested project, maintained performance of tools and services processing
+        large amounts of data through constant analysis and optimization.
+    \item
+        Wrote extensive,
+        \href
+            {https://docs.ci.openshift.org/docs/architecture/ci-operator-steps/}
+            {internal}\slash \href
+            {https://docs.ci.openshift.org/docs/architecture/step-registry}
+            {external}
+        \href
+            {https://docs.ci.openshift.org}
+            {documentation}.
+    \item
+        Entirely free\slash open-source
+        \href{https://github.com/bbguimaraes}{work}.
+\end{itemize}
 
-\subsection*{Red Hat - Openshift - Continuous Integration/Delivery}
+\phantomsection
+\href{https://ucs.br}{Universidade de Caxias do Sul} (2012-2015)
+\label{subsec:ucs}
 
-\begin{description}
-    \item[Titles]:
-        Associate software engineer (2017), Software engineer (2017-)
-    \item[Location]: Brno, Czech Republic (team local and remote in the USA)
-    \item[Attributions]:
-        \begin{itemize}
-            \item
-                Maintenance of the processes for building, verifying and
-                publishing official releases and container images.
-            \item
-                Development of the tools used in continuous integration for
-                pull request validation, unit and integration tests, and
-                internal tools used by the team.
-            \item
-                Deployment automation, maintenance, and testing of the
-                Openshift Online and Dedicated clusters.
-            \item
-                Development and deployment of upstream kubernetes CI
-                infrastructure.
-        \end{itemize}
-    \item[Platform]: kubernetes, openshift, jenkins, ansible.
-    \item[Infrastructure]: docker, vagrant, bare-metal, Amazon EC2.
-    \item[CI jobs]: python, shell, go, groovy, java.
-    \item[Public repositories]:
-        \begin{itemize}
-            \item \url{https://github.com/openshift/aos-cd-jobs.git}
-            \item \url{https://github.com/openshift/release.git}
-            \item \url{https://github.com/kubernetes/test-infra.git}
-            \item \url{https://github.com/openshift/origin-ci-tool.git}
-            \item \url{https://github.com/openshift/openshift-ansible.git}
-        \end{itemize}
-\end{description}
+\begin{itemize}
+    \item
+        Worked on the infrastructure and applications that served 30k users
+        (teachers, students, employees).
+    \item
+        Web applications (Linux, Python, containers) and services (web servers,
+        cache, task queues, databases), tools (CI, ticket system), integrated
+        authentication.
+\end{itemize}

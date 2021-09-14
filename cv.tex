@@ -1,4 +1,3 @@
-% based on https://github.com/vaishaks/latex-cv
 \documentclass[a4paper]{article}
 \linespread{1.2}
 \setlength{\parindent}{0cm}
@@ -11,7 +10,6 @@
 \usepackage{enumitem}
 
 \titleformat{\section}{\large}{\thesubsection}{0cm}{\textsc}
-\titleformat{\subsection}{\normalsize}{\thesubsection}{0cm}{\textsc}
 \titlespacing{\section}{0pt}{0.5em}{0.5em}[0pt]
 
 \setlength{\columnsep}{2em}
@@ -19,13 +17,14 @@
 \setlist{label=\textbullet,topsep=0cm,labelsep=0.5em,leftmargin=*,noitemsep}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{hyperref}
+\pagestyle{empty}
+
 \definecolor{linkcolor}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolor,linkcolor=linkcolor}
 
 \begin{document}
-    \input{overview}
-    \newpage
     \small
+    \input{overview}
     \begin{multicols}{2}
     \input{projects}
     \input{education}

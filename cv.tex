@@ -8,7 +8,8 @@
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{xcolor}
 
-\titleformat{\section}{\large}{\thesubsection}{0pt}{\textsc}
+\newcommand{\palatino}{\fontfamily{ppl}\selectfont\textsc}
+\titleformat{\section}{}{}{}{\large\palatino}
 \titlespacing{\section}{0pt}{0.5em}{0.5em}[0pt]
 
 \linespread{1.2}
